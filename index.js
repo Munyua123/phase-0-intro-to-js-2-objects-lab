@@ -1,5 +1,5 @@
 // Write your solution in this file!
-let employee = {
+const employee = {
     name : "Ham",
     streetAddress: "10 Broadway"
 }
@@ -17,9 +17,8 @@ function deleteFromEmployeeByKey(employee, key) {
    return newEmployee
 }
 
-function destructivelyDeleteFromEmployeeByKey(employee, key) {
-    let newEmployee = {employee, "streetAddress" : ""} 
+function destructivelyDeleteFromEmployeeByKey(employee, key) { 
     delete employee[key]
     return employee
-     return newEmployee
+
 }
